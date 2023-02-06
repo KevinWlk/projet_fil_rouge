@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+img {
+    height: 150px;
+    width: auto;
+    opacity: 0.33;
+
+}
+
+.selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
