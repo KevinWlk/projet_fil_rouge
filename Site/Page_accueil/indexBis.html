@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9c19ebdf1b.js" crossorigin="anonymous"></script>
+    <title>GéoCOACH</title>
+</head>
+
+<body>
+    <header>
+        <section class="grid">
+            <img src="/Page_accueil/img/logo.png" class="logo" alt="logo" >
+            <h1 id="title">GéoCoach</h1>
+            <p id="present" >"L'emploi Sport"</p>
+            <div id="header"></div>
+            <a class="connect" href="#"><i class="fa-sharp fa-regular fa-user"></i><br>Connexion</a>
+            <a class="contact" href="#"><i class="fa-sharp fa-regular fa-envelope"></i><br>Nous contacter</a>
+            <div id="login_form">
+                <a id="form-close" href="#"><i class="fas fa-times"></i></a>
+                <form id="login-form">
+                    <h2>Connexion</h2>
+                    <label for="salutation">Vous êtes :</label>
+                    <select id="salutation" name="salutation" required>
+                        <option value="">Sélectionnez une option</option>
+                        <option value="Monsieur">Coach</option>
+                        <option value="Madame">Gérant</option>
+                    </select>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Valider</button>
+                </form>
+            </div>
+        </section>
+    </header>
+    <main> 
+        <form id="logIn">
+            <h2>Connexion</h2>
+            <input type="email" id="mail" name="mail" placeholder="ex : monadressemail@geocoach.com" required>
+            <input type="password" id="pass" name="pass" placeholder="Mot de passe" required>
+            <button type="submit">Valider</button>
+        </form>
+
+        <h2 id="createAccompt">Créer un compte</h2>
+
+            <div id="left_column">
+                <h2>Gérant & Manager</h2>
+                    <p>Je représente une structure sportive (association, piscine, salle de remise en forme, ...)</p>
+                    <div class="diapo">
+                        <img src="/Page_accueil/img/salleSportReduce.jpg" class="slide">
+                        <img src="/Page_accueil/img/tennisReduce.jpg" class="slide">
+                        <img src="/Page_accueil/img/aquagymReduce.jpg" class="slide">
+                    </div>
+                    
+            </div>
+            <div id="right_column">
+                    <h2>Coach</h2>
+                        <p>Je suis un professionnel de l’activité physique et sportive (coach, maître-nageur, professeur de danse, ...)</p>
+                        <div class="diapo">
+                            <img src="/Page_accueil/img/coachingReduce.jpg" class="slideBis">
+                            <img src="/Page_accueil/img/hiphopReduce.jpg" class="slideBis">
+                            <img src="/Page_accueil/img/danseurReduce.jpg" class="slideBis">
+                        </div>
+            </div>
+    </main>
+    <footer>
+        <div>©2023 géoCOACH - All Rights Reserved - Support : support@geocoach.com</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
