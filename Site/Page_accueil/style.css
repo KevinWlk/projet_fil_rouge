@@ -110,7 +110,7 @@ main {
     border-radius: 5%;
     padding: 3%;
     margin: 2%;
-    background-image: url("/Page_accueil/img/yellow-texture_1249-115.avif");
+    background-image: url("../Page_accueil/img/yellow-texture_1249-115.avif");
     background-size: cover;
     background-position: center;
     z-index: 1;
