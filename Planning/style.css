@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat (2fr, 60% , 1fr);
+
+    height: 100vh;
+    width:100%;
+
+}
+
+
+header{
+    padding: 30px;
+    text-align: center;
+    font-size: 22px;
+    background-color: black;
+    color: wheat;
+}
+
+.logo{
+    grid-column: span 1;
+    /* grid-auto-flow: column; */
+}
+
+h1{
+    grid-column: span 1;
+    text-align: center;
+    align-items: center;
+}
+.fa-solid fa-envelope {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect{
+    grid-column: span 1;
+}
+
+
+main{
+    padding: 20px;
+}
+
+nav{
+    grid-column: span 1;
+    grid-row: auto;
+    background-color: blanchedalmond;
+}
+
+.planning{
+    grid-column: span 2;
+}
+
+.sidebarnav{
+list-style-type: none;
+max-height: 650px;
+display: flex;
+flex-direction: column;
+}
+
+.sidebarnav li {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebarnav li a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    color: coral;
+}
+
+.content{
+    grid-column: span 2;
+}
+
+footer{
+    grid-column: span 3;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* @media screen and (max-width: 800px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+        text-align: center;
+        align-items: center;
+    }    
+
+    .sidebarnav{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sidebarnav li{
+        margin: 0 8px;
+        font-size: 19px;
+
+    }
+
+    main p{
+        min-height: 385px;
+    }
+}
+
+footer{
+    grid-column: span 3;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+} */
+

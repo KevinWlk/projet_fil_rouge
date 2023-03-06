@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .logo {
+    max-width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin: 0;
+    }
+
+    .connect,
+    .contact {
+    padding: 5px;
+    margin: 0;
+    padding: 5px;
+    }
+
+    #present {
+    display: none;
+    }
+    #left_column, #right_column {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 10px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    #left_column{
+        margin-top: 10px;
+    }
+
+    #left_column p, #right_column p{
+        display: none;
+    }
+
+    #left_column h2, #right_column h2{
+        position: absolute;
+        font-size: xx-large;
+        text-shadow: 1px 1px 1px white;
+        color: black;
+        background-color: #d1ab61b3;
+        opacity: 60%;
+    }
+
+    .diapo img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+    max-width: 30%;
+    border-radius: 10%;
+    justify-self: end;
+    }
+
+    .connect,
+    .contact {
+    font-size: 14px;
+    }
+
+    #logIn{
+        display: flex;
+    }
+
+    #createAccompt{
+        display: block;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .contact , .connect{
+        display: none;
+    }
+}
