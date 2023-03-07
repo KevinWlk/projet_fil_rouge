@@ -14,7 +14,7 @@ formClose.addEventListener('click', function(event){
 });
 
 
-// if (window.innerWidth > 768) {
+
 // pour le premier diaporama
 let slideIndex = 0;
 showSlides();
