@@ -29,6 +29,8 @@ body {
     padding: 10px;
     text-align: center;
     border: solid green;
+    font-family: 'Kaushan Script', cursive;
+
 
 }
 
@@ -47,7 +49,7 @@ body {
     margin-left: auto;
     border: solid blue;
     text-align: center;
-
+    font-family: 'Kaushan Script', cursive;
 }
 
 .contact:hover {
@@ -79,7 +81,8 @@ body {
     align-items: center;
     justify-content: center;
     color: black;
-    font-size: 6vw;
+    font-size: 4vw;
+    font-family: 'Kaushan Script', cursive;
 }
 
 main {
@@ -115,6 +118,7 @@ main {
     background-position: center;
     z-index: 1;
     box-shadow: 5px 5px 5px black;
+    z-index: 1;
     
 }
 #left_column h2,
@@ -124,8 +128,10 @@ main {
     text-align: center;
     align-self: center;
     text-shadow: 5px 5px 1px black;
-    position: relative;
-    z-index: 1;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5vw;
+    z-index:2;
+
 }
 
 #left_column p,
@@ -154,8 +160,6 @@ main {
     overflow: hidden;
     border-radius: 5%;
     border: solid white 1px;
-    position: relative;
-    z-index: 0;
 }
 
 .slide,
