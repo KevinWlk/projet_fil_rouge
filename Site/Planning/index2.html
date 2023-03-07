@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/9c19ebdf1b.js" crossorigin="anonymous"></script>
+
+
+
+
+
+    <!--JAVASCRIPT-->
     <script src="script.js" defer> </script>
+
+    <!--Fihiers CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
         
 
@@ -29,15 +38,24 @@
             <nav>
                 <ul class="sidebarnav">
                     <li><a href="#">Fiche Entreprise</a></li>
-                    <li><a href="/index2.html">Planning</a></li>
+                    <li><a href="../Planning/index2.html">Planning</a></li>
                     <li><a href="#">Messagerie</a></li>
                     <li><a href="#">Coach</a></li>
                     <li><a href="#">Recherche</a></li>
                     <li><a href="#">Paramètre</a></li>
                 </ul>
             </nav>
-            <div class="planning">ajouter le planning ici</div>
+            <div class="planning"><div id='calendar'></div></div>
     </main>
-    <footer>Copyrights</footer>
+    <footer>
+        <div>©2023 géoCOACH - All Rights Reserved - Support : support@geocoach.com</div>
+    </footer>
+
+        <!--FULLCALENDAR JAVASCRIPT-->
+        <script src='../Planning/FullCalendar/core/index.global.js'></script>
+        <script src="../Planning/FullCalendar/daygrid/index.global.js"></script>
+        <script src="../Planning/FullCalendar/interaction/index.global.js"></script>
+        <script src="../Planning/FullCalendar/timegrid/index.global.js"></script>
+        <script src="../Planning/FullCalendar/list/index.global.js"></script>
 </body>
 </html>
