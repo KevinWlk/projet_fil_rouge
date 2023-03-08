@@ -24,28 +24,42 @@
 <body>
     <header>
         <section class="grid">
-            <img src="../Page_accueil/img/logo.png" class="logo" alt="logo" >
+            <a id="logoBis" href="../Page_accueil/index.html">
+                <img src="../Page_accueil/img/logo.png" class="logo" alt="logo" >
+            </a>
             <h1 id="title">GéoCoach</h1>
             <p id="present" >“L’emploi sport à côté de chez toi”</p>
             <div id="header"></div>
-            <a class="connect" href="#"><i class="fa-sharp fa-regular fa-user"></i><br>Connexion</a>
-            <a class="contact" href="#"><i class="fa-sharp fa-regular fa-envelope"></i><br>Nous contacter</a>
             <div id="login_form">
             </div>
         </section>
     </header>
     <main>
-            <nav>
-                <ul class="sidebarnav">
-                    <li><a href="#">Fiche Entreprise</a></li>
-                    <li><a href="../Planning/index2.html">Planning</a></li>
-                    <li><a href="#">Messagerie</a></li>
-                    <li><a href="#">Coach</a></li>
-                    <li><a href="#">Recherche</a></li>
-                    <li><a href="#">Paramètre</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="sidebarnav">
+                <li><a href="#">Fiche Entreprise</a></li>
+                <li><a href="../Planning/index2.html">Planning</a></li>
+                <li><a href="#">Messagerie</a></li>
+                <li><a href="#">Coach</a></li>
+                <li><a href="#">Recherche</a></li>
+                <li><a href="#">Paramètre</a></li>
+            </ul>
+        </nav>
             <div class="planning"><div id='calendar'></div></div>
+            <div id="bottomMenu">
+                <nav>
+                    <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="/Planning/index2.html"><i class="far fa-calendar"></i></a></li>
+                    <li><a href="../Page_accueil/indexBis.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="far fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
     </main>
     <footer>
         <div>©2023 géoCOACH - All Rights Reserved - Support : support@geocoach.com</div>

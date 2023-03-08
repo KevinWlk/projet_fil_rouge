@@ -24,42 +24,38 @@ body {
 
 .connect {
     grid-area: 1/11/3/12;
+    max-width: 90%;
     color: black;
     text-decoration: none;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
-    border: solid green;
     font-family: 'Kaushan Script', cursive;
+    font-size: large;
 
 
-}
-
-.connect:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    transition: all 0.4s ease-in-out;
 }
 
 .contact {
     grid-area: 1/12/3/13;
+    max-width: 90%;
     color: black;
     text-decoration: none;
-    padding: 10px;
-    margin-left: auto;
-    border: solid blue;
+    padding: 0px;
+    margin-left: 0;
+    font-size: large;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
 }
 
-.contact:hover {
-    background-color: white;
+.connect:hover, .contact:hover {
+    background-color:#d1ab61b3;
     color: black;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.4s ease-in-out;
+    transform:scale(1.10);
 }
 
-.grid {
+header{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2,1fr);
@@ -75,26 +71,27 @@ body {
 
 #present {
     grid-area: 1/3/3/11;
-    border: solid rgb(170, 44, 44);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: #d1ab61;
     font-size: 4vw;
     font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px 1px black;
 }
 
 main {
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
     height: 100%;
     padding: 3%;
     background-color: #d1ab61b3;
     align-items: center;
     justify-items: center;
+    justify-content: space-around;
 }
+
 #createAccompt{
     display: none;
 }
@@ -118,7 +115,9 @@ main {
     background-position: center;
     z-index: 1;
     box-shadow: 5px 5px 5px black;
-    z-index: 1;
+    transition: all 0.8s ease-in-out;
+
+
     
 }
 #left_column h2,
@@ -129,7 +128,7 @@ main {
     align-self: center;
     text-shadow: 5px 5px 1px black;
     font-family: 'Kaushan Script', cursive;
-    font-size: 5vw;
+    font-size: 2.9rem;
     z-index:2;
 
 }
@@ -146,6 +145,11 @@ main {
 
 }
 
+.columnSelect{
+    text-decoration: none;
+    padding: 10px;
+}
+
 .container p {
     color: rgb(64, 164, 83);
     font-size: 24px;
@@ -160,6 +164,8 @@ main {
     overflow: hidden;
     border-radius: 5%;
     border: solid white 1px;
+    transform:scale(1.10);
+
 }
 
 .slide,
@@ -174,8 +180,8 @@ main {
 
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 10px;
     bottom: 0;
@@ -198,22 +204,24 @@ footer {
     align-items: center;
 }
 
+#login-form {
+    background-color: #d1ab61b3;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
 #form-close {
-    position: absolute;
+    position:absolute;
     top: 20px;
     right: 20px;
     font-size: 24px;
     color: white;
 }
-
-#login-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
 #login-form h2 {
     margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: xx-large;
 }
 
 #login-form label {
@@ -237,70 +245,25 @@ footer {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Kaushan Script', cursive;
+    font-size: x-large;
+    
+
 }
 
 #login-form button:hover {
-    background-color: #3e8e41;
-    text-decoration: overline;
-}
-
-
-@media (min-width: 768px) {
-    #form-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #login-form {
-        max-width: 500px;
-    }
+    background-color: #d1ab61b3;
+    text-decoration: solid;
+    transform:scale(1.20);
+    color: black;
+    border: 1px solid black;
 }
 
 #logIn{
     display: none;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-}
-#logIn button{
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-#logIn button:hover {
-    background-color: #d1ab61b3;
-    
-}
-
-#logIn h2 {
-    margin-bottom: 20px;
-}
-#logIn input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 7px;
-
-}
-#logIn h2{
-    align-self: center;
-    color: white;
-    text-shadow: 1px 1px 1px black;
 }

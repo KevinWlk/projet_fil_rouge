@@ -2,47 +2,83 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>GéoCoach</title>
-    <!-- <link rel="stylesheet" href="geocoach.css"/> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <script src="https://kit.fontawesome.com/9c19ebdf1b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>GéoCOACH</title>
 </head>
-<!-- Corps de la page-->
+
 <body>
-  <!-- en tête de page -->
-  
-  <header class="container">
-        <!--logo de la page-->
-      <div id="logoHeader">
-        <img src="/Page_accueil/img/LogoSample_ByTailorBrands.jpg" alt="logo">
-      </div>
-      <div id="txtHeader">
-          <p>"Le sport à côté de chez vous"</p>
-      </div>
-        <!--lien vers compte-->
-      <div id="accountHeader">
-          <a href="#account"> Mon Compte </a>
-      </div>
-        <!--lien vers aide-->
-      <div id="helpHeader">
-            <a href="#help"> Aide </a>
-      </div>
+    <header>
+        <img src="../Page_accueil/img/logo.png" class="logo" alt="logo" >
+        <h1 id="title">GéoCoach</h1>
+        <p id="present" >“L’emploi sport à côté de chez toi”</p>
+        <div id="header"></div>
+        <a class="connect" href="#"><i class="fa-sharp fa-regular fa-user"></i><br>Se Connecter</a>
+        <a class="contact" href="mailto:kevin.walencik@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i><br>Nous contacter</a>
+        <div id="login_form">
+            
+            <form id="login-form">
+                <h2>Connexion</h2>
+                <label for="salutation">Vous êtes :</label>
+                <select id="salutation" name="salutation" required>
+                    <option value="">Sélectionnez une option</option>
+                    <option value="Monsieur">Coach</option>
+                    <option value="Madame">Gérant</option>
+                </select>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Valider</button>
+            </form>
+            <a id="form-close" href="#"><i class="fas fa-times"></i></a>
+        </div>
     </header>
-      <!--coeur de la page-->
-      <main>
-        <section class="selection">
-          <article>
-            <img src="img/shn-1560517791.jpg" alt="image_sportif">
-              <h3>Coach</h3>
-              <p>"description">Je suis un professionnel de l'activité physique et sportive (Coach, professeur de danse, professeur de Yoga, Maître-Nageur, etc...</p>
-          </article>
-          <article>
-            <img src="img/5f7f3c612b246_salle_de_sport_1-5034108.jpg" alt="image_salle">
-              <h3>Entreprise</h3>
-              <p class="description">Je représente une structure sportive (association, piscine, salle de remise en forme, ...)s</p>
-          </article>
-        </section>
-      </main>
-      <footer>
-        <p>All rights reserved</p>
-      </footer> -->
+    <main> 
+        <form id="logIn">
+            <h2>Connexion</h2>
+            <input type="email" id="mail" name="mail" placeholder="ex : monadressemail@geocoach.com" required>
+            <input type="password" id="pass" name="pass" placeholder="Mot de passe" required>
+            <button type="submit">Valider</button>
+        </form>
+
+        <h2 id="createAccompt">Créer un compte</h2>
+
+        <a class="columnSelect" href="../Planning/index2.html">
+            <div id="left_column"> 
+                <h2>Gérant/Manager</h2>
+                    <p>Je représente une structure sportive (association, piscine, salle de remise en forme, ...)</p>
+                    <div class="diapo">
+                        <img src="../Page_accueil/img/salleSportReduce.jpg" class="slide">
+                        <img src="../Page_accueil/img/tennisReduce.jpg" class="slide">
+                        <img src="../Page_accueil/img/aquagymReduce.jpg" class="slide">
+                    </div>
+            </div>
+        </a>
+        <a class="columnSelect" href="#">
+            <div id="right_column">
+                    <h2>Coach</h2>
+                        <p>Je suis un professionnel de l’activité physique et sportive (coach, maître-nageur, professeur de danse, ...)</p>
+                        <div class="diapo">
+                            <img src="../Page_accueil/img/coachingReduce.jpg" class="slideBis">
+                            <img src="../Page_accueil/img/hiphopReduce.jpg" class="slideBis">
+                        </div>
+            </div>
+        </a>
+    </main>
+    <footer>
+        <div>©2023 géoCOACH - All Rights Reserved - Support : support@geocoach.com</div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
